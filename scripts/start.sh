@@ -31,4 +31,4 @@ nohup java -jar \
     -Dspring.profiles.active=$IDLE_PROFILE \
     $JAR_NAME > $REPOSITORY/nohup.out 2>&1 &
 #   $REPOSITORY/$JAR_NAME 2>&1 &
-#
+##
