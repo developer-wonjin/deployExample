@@ -31,7 +31,8 @@ function find_idle_profile()
 function find_idle_port()
 {
     IDLE_PROFILE=$(find_idle_profile)
-
+    echo "profile.sh의 find_idle_port함수"
+    echo "IDLE_PROFILE: ${IDLE_PROFILE}"
     if [ ${IDLE_PROFILE} == real1 ]
     then
       echo "8081"
