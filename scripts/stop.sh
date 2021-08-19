@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
-
+echo "============================stop.sh============================"
 ABSPATH=$(readlink -f $0)
 ABSDIR=$(dirname $ABSPATH)
+PATH_NAME=$(pwd)
+
 source ${ABSDIR}/profile.sh
 
-echo "ABSPATH: ${ABSPATH} $0"
+echo "ABSPATH: ${ABSPATH} \$0: $0"
+echo "PWD: ${PATH_NAME})"
 echo "ABSDIR: ${ABSDIR}"
 
 IDLE_PORT=$(find_idle_port)
@@ -20,3 +23,4 @@ else
   kill -15 ${IDLE_PID}
   sleep 5
 fi
+echo "==============================================================="
