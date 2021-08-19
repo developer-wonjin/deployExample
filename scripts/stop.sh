@@ -7,7 +7,7 @@ PATH_NAME=$(pwd)
 source ${ABSDIR}/profile.sh
 
 echo "ABSPATH: ${ABSPATH} \$0: $0"
-echo "PWD: ${PATH_NAME})"
+echo "PWD: ${PATH_NAME}"
 echo "ABSDIR: ${ABSDIR}"
 
 IDLE_PORT=$(find_idle_port)

@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+
+echo "=========================================start.sh==========================================="
 ABSPATH=$(readlink -f $0)
 ABSDIR=$(dirname $ABSPATH)
 source ${ABSDIR}/profile.sh
@@ -32,3 +34,4 @@ nohup java -jar \
     $JAR_NAME > $REPOSITORY/nohup.out 2>&1 &
 #   $REPOSITORY/$JAR_NAME 2>&1 &
 ##
+echo "============================================================================================"
